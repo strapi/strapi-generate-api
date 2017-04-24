@@ -1,0 +1,9 @@
+'use strict';
+
+/**
+ * Export the <%= id %> model
+ */
+
+module.exports = {
+
+};

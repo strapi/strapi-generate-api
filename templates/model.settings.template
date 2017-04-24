@@ -1,0 +1,21 @@
+{
+  "identity": "<%= id %>",
+  "connection": "",
+  "displayedAttribute": "",
+  "schema": true,
+  "attributes": {
+<%= attributes %><% if (attributes.length) { %>,<% } %>
+    "createdBy": {
+      "model": "user"
+    },
+    "updatedBy": {
+      "model": "user"
+    },
+    "contributors": {
+      "collection": "user",
+      "via": "<%= idPluralized %>"
+    }
+  },
+  "autoCreatedAt": true,
+  "autoUpdatedAt": true
+}

@@ -1,0 +1,58 @@
+'use strict';
+
+/**
+ * A set of functions called "actions" for `<%= id %>`
+ */
+
+module.exports = {
+
+  /**
+   * Get <%= id %> entries.
+   *
+   * @return {Array}
+   */
+
+  find: function * () {
+    this.body = [];
+  },
+
+  /**
+   * Get a specific <%= id %>.
+   *
+   * @return {Object}
+   */
+
+  findOne: function * () {
+    this.body = {};
+  },
+
+  /**
+   * Create a <%= id %> entry.
+   *
+   * @return {Object}
+   */
+
+  create: function * () {
+    this.body = {};
+  },
+
+  /**
+   * Update a <%= id %> entry.
+   *
+   * @return {Object}
+   */
+
+  update: function * () {
+    this.body = {};
+  },
+
+  /**
+   * Destroy a <%= id %> entry.
+   *
+   * @return {Object}
+   */
+
+  destroy: function * () {
+    this.body = {};
+  }
+};
